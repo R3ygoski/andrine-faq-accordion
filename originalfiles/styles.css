@@ -1,0 +1,140 @@
+*{
+  font-family: "Work Sans", sans-serif;
+  margin: none;
+  padding: none;
+}
+
+body {
+  height: 100vh;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/images/background-pattern-mobile.svg);
+  background-color: bisque;
+  color: hsl(292, 42%, 14%);
+ 
+}
+
+.container {
+  width:550px;
+  height: 570px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 0px 25px;
+  overflow: hidden;
+  
+}
+
+.faq{ 
+  margin-bottom: 20px;
+  margin-top: 5px;
+  display: flex;
+  height: 100px;
+}
+.faq img{
+  width: 40px;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  padding-left: 25px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline;
+}
+.h-wrapper{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075) ;
+  padding: 0px 15px;
+}
+h4 {
+  font-size: larger;
+}
+
+h4:hover {
+  color : hsl(292, 16%, 49%);
+}
+/* -----------------------visibility------------------------------- */
+.paragraph {
+  display: none;
+  color: hsl(292, 16%, 49%);
+  font-size: 16px;
+}
+
+p {
+  width: 100%;
+  padding-left: 15px;
+  line-height: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+
+  
+    .container {
+      width: 280px;
+      height: 530px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 0px 25px;
+      overflow: hidden;
+      
+    }
+    .faq{ 
+      display: flex;
+      margin-top: -20px;
+      margin-bottom: -15px;
+    }
+    .faq img{
+      width: 25px;
+      margin-left: 5px;
+    }
+    h1 {
+      font-size: 30px;
+      padding-top: 30px;
+    }
+
+    
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 25px;
+    }
+    .h-wrapper{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.075) ;
+
+    }
+    
+    h4 {
+      width: 230px;
+      font-size: 16px;
+      margin-left: -20px;
+    }
+    h4:hover {
+      color : hsl(292, 16%, 49%);
+    }
+    /* -----------------------visibility------------------------------- */
+    .paragraph {
+      display: none;
+      color: hsl(292, 16%, 49%);
+      font-size: 16px;
+      overflow: hidden;
+      width: 100%;
+  }
+
+  p{
+    padding: 0;
+    margin-top: 0;
+  }
+}
